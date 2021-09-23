@@ -11,4 +11,5 @@ pattern_script = """
 """
 
 [watch]
+watch = ["src","public"]
 ignore= ["dist", "node_modules"]
