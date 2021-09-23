@@ -9,6 +9,24 @@ Trunk is a WASM web application bundler for Rust.
 * Web development by Vite.js
 * Bundle by Vite.js
 
+# Trunk Configuration
+
+Elements in trunk.toml: 
+
+```
+pub struct ConfigOpts {
+    pub build: Option<ConfigOptsBuild>,
+    pub watch: Option<ConfigOptsWatch>,
+    pub serve: Option<ConfigOptsServe>,
+    pub clean: Option<ConfigOptsClean>,
+    pub tools: Option<ConfigOptsTools>,
+    pub proxy: Option<Vec<ConfigOptsProxy>>,
+    pub hooks: Option<Vec<ConfigOptsHook>>,
+}
+```
+
+More details: https://github.com/thedodd/trunk/blob/master/src/config/models.rs
+
 # References
 
 * Trunk: https://trunkrs.dev/
