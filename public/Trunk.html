@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Trunk | Vanilla | web-sys</title>
+    <!-- sync assets for Trunk-->
+    <link data-trunk rel="copy-dir" href="styles"/>
+    <link data-trunk rel="copy-dir" href="images"/>
+    <link data-trunk rel="copy-dir" href="scripts"/>
+    <base data-trunk-public-url/>
+    <!-- refer public resources, should start with "./" -->
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+
+<script>
+    function onWasmInstantiated(wasm, exports) {
+        console.log(wasm);
+        console.log(exports["greet"]("leijuan"));
+    }
+</script>
+
+<script src="./scripts/index.ts"></script>
+
+<link data-trunk rel="rust" href="../Cargo.toml" data-wasm-opt="z"/>
+
+</body>
+</html>
