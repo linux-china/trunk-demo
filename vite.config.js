@@ -2,7 +2,7 @@
  * @type {import('vite').UserConfig}
  */
 const config = {
-    root: "trunk"
+    root: "dist"
 }
 
 export default config
