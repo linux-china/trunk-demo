@@ -9,3 +9,6 @@ pattern_script = """
   });
 </script>
 """
+
+[watch]
+ignore= ["dist", "node_modules"]
