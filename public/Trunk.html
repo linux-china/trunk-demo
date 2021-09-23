@@ -17,12 +17,12 @@
 <script type="module">
     //import {hello} from "./scripts/index";
 
-    function onWasmInstantiated(wasm, exports) {
+    //callback for Wasm Instantiated
+    window.onWasmInstantiated = (wasm, exports) => {
         console.log(wasm);
         console.log(exports["greet"]("leijuan"));
         //hello();
     }
-    window["onWasmInstantiated"] = onWasmInstantiated;
 </script>
 
 <link data-trunk rel="rust" href="../Cargo.toml" data-wasm-opt="z"/>
