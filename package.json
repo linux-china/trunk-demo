@@ -9,7 +9,7 @@
   "author": "linux_china <libing.chen@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "vite-dev": "vite",
+    "vite-dev": "vite --open",
     "vite-serve": "trunk build; vite preview",
     "trunk-serve": "trunk serve --open",
     "trunk-watch": "trunk watch",
