@@ -1,5 +1,5 @@
 [build]
-target = "Trunk.html"
+target = "public/Trunk.html"
 dist = "dist"
 pattern_script = """
 <script type="module">
