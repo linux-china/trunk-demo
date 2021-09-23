@@ -1,4 +1,4 @@
-Trunk Demo
+Trunk & Vite.js Demo
 =========================
 
 Trunk is a WASM web application bundler for Rust.
