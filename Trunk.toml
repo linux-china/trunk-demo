@@ -1,0 +1,11 @@
+[build]
+target = "Trunk.html"
+dist = "dist"
+pattern_script = """
+<script type="module">
+  import init, * as exports from '{base}{js}';
+  init('{base}{wasm}').then(wasm=> {
+     onWasmInstantiated(wasm, exports);
+  });
+</script>
+"""
