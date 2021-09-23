@@ -1,6 +1,3 @@
-console.log("Hi TypeScript");
-
-function onWasmInstantiated(wasm: WebAssembly.Instance, exports: { [index: string]: Function }) {
-    console.log(wasm);
-    console.log(exports["greet"]("雷卷"));
+export function hello() {
+   console.log("hello from index.ts!")
 }
