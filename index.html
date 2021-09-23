@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Trunk | Vanilla | web-sys</title>
+
+    <link data-trunk rel="copy-file" href="src/index.ts"/>
+    <link data-trunk rel="css" href="public/app.css"/>
+    <base data-trunk-public-url/>
+    <script>
+        function onWasmInstantiated(wasm, exports) {
+            console.log(wasm);
+            console.log(exports["greet"]("leijuan"));
+        }
+    </script>
+    <script src="index.ts"></script>
+</head>
+<body>
+
+<link data-trunk rel="rust" href="Cargo.toml" data-wasm-opt="z" data-bin="vanilla-example"/>
+
+</body>
+</html>
