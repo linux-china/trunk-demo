@@ -3,6 +3,10 @@ Trunk Demo
 
 Trunk is a WASM web application bundler for Rust.
 
+# Requirements
+
+* trunk install:  `brew install trunk`
+
 # Features
 
 * Wasm build by Trunk
