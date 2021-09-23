@@ -1,0 +1,25 @@
+{
+  "name": "trunk-demo",
+  "version": "0.1.0",
+  "description": "Rust Wasm demo by Trunk and Vite.js",
+  "keywords": [
+    "trunk",
+    "vite"
+  ],
+  "author": "linux_china <libing.chen@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "vite-dev": "vite",
+    "vite-serve": "trunk build; vite preview",
+    "trunk-serve": "trunk serve --open",
+    "trunk-watch": "trunk watch",
+    "dev": "run-p trunk-watch vite-dev",
+    "build": "trunk build; vite build",
+    "clean": "cargo clean; rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "vite": "^2.5.10",
+    "npm-run-all": "^4.1.5"
+  }
+}
