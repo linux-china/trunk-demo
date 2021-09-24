@@ -1,11 +1,12 @@
 Trunk & Vite.js Demo
 =========================
 
-Trunk is a WASM web application bundler for Rust.
+Trunk is a WASM web application bundler for Rust, and Vite.js is next Generation Frontend Tooling. Ok, they are
+together now for you.
 
 # Development
 
-* install Trunk first:  `brew install trunk`
+* install Trunk first:  `cargo install --git https://github.com/linux-china/trunk.git`
 * start dev server by `npm run dev` and visit http://localhost:3000
 
 # Features
@@ -13,6 +14,7 @@ Trunk is a WASM web application bundler for Rust.
 * Wasm build by Trunk
 * Web development by Vite.js
 * Bundle by Vite.js
+* Trunk can still work as his way.
 
 # Trunk Configuration
 
