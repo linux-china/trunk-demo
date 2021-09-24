@@ -6,8 +6,8 @@ together now for you.
 
 # Development
 
-* install Trunk first:  `cargo install --git https://github.com/linux-china/trunk.git`
-* start dev server by `npm run dev` and visit http://localhost:3000
+* Install Trunk first:  `cargo install --git https://github.com/linux-china/trunk.git`
+* Start dev server: run `npm install` then `npm run dev` and visit http://localhost:3000
 
 # Features
 
