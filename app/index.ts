@@ -1,6 +1,8 @@
-import init, * as exports from "../public/wasm/trunk-demo"
+import init, * as exports from "../target/trunk/trunk-demo";
 
-init('/wasm/trunk-demo_bg.wasm').then((wasm: any) => {
+const wasmPath = '../target/trunk/trunk-demo_bg.wasm';
+
+init(wasmPath).then((wasm: any) => {
     console.log(wasm);
     console.log(exports.greet("Wasm"));
 });
