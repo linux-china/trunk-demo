@@ -1,6 +1,7 @@
 [build]
-target = "public/Trunk.html"
-dist = "dist"
+target = "Trunk.html"
+dist = "public/wasm"
+public_url = "/wasm/"
 pattern_script = """
 <script type="module">
   import init, * as exports from '{base}{js}';
@@ -11,5 +12,4 @@ pattern_script = """
 """
 
 [watch]
-watch = ["src","public"]
-ignore= ["dist", "node_modules"]
+watch = ["src"]
