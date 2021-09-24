@@ -12,4 +12,4 @@ pattern_script = """
 """
 
 [watch]
-watch = ["src"]
+watch = ["Trunk.html", "Cargo.toml", "src"]
