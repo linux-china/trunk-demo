@@ -14,7 +14,7 @@
     "trunk-serve": "trunk serve --open",
     "trunk-watch": "trunk watch",
     "dev": "run-p trunk-watch vite-dev",
-    "build": "mkdir -p dist; trunk build; vite build",
+    "build": "mkdir -p target/trunk; trunk build; vite build",
     "clean": "cargo clean; rm -rf dist"
   },
   "devDependencies": {
