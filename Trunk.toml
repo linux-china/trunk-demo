@@ -1,7 +1,6 @@
 [build]
 target = "Trunk.html"
-dist = "public/wasm"
-public_url = "/wasm/"
+dist = "target/trunk"
 pattern_script = """
 <script type="module">
   import init, * as exports from '{base}{js}';
