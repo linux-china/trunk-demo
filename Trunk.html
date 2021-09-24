@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Trunk | Vanilla | web-sys</title>
+    <base data-trunk-public-url/>
+</head>
+<body>
+
+<script>
+    //callback for Wasm Instantiated
+    window.onWasmInstantiated = (wasm, exports) => {
+        console.log(wasm);
+        console.log(exports["greet"]("leijuan"));
+    }
+</script>
+
+<link data-trunk rel="rust" href="Cargo.toml" data-wasm-opt="z"/>
+
+</body>
+</html>
